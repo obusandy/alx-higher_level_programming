@@ -5,10 +5,10 @@ def magic_calculation(a, b):
     from magic_calculation_102 import add, sub
 
     if a < b:
-        i = add(a, b)
+        c = add(a, b)
         for num in range(4, 6):
-            i = add(i, num)
-        return (i)
+            c = add(c, num)
+        return (c)
 
     else:
         return(sub(a, b))
