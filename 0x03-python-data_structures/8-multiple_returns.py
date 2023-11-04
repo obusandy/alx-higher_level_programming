@@ -2,5 +2,5 @@
 def multiple_returns(line):
 
     if line == "":
-        return (None)
+        return (0, None)
     return (len(line), line[0])
