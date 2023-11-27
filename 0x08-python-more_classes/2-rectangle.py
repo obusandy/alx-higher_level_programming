@@ -6,7 +6,7 @@ Defines a class Rectangle with width and height properties
 
 class Rectangle:
     """Representation of a rectangle based on:
-    
+
     Arguments:
         width(int): width
         height(int): height
@@ -37,7 +37,7 @@ class Rectangle:
     @property
     def height(self):
         """gets the value for the private instance attribute height
-        
+
         Returns: height value"""
         return self.__height
 
