@@ -13,7 +13,11 @@ class Rectangle:
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        """ Initialization of the original rectangle"""
+        """ Initialiization of the original rectangle
+        Arguments:
+            width(int): width
+            height(int): height
+        """
         self.width = width
         self.height = height
         type(self).number_of_instances += 1
@@ -21,6 +25,8 @@ class Rectangle:
     @property
     def width(self):
         """ width current value
+        Arguments:
+        value(int): width value
         Returns: width value
         """
         return self.__width
