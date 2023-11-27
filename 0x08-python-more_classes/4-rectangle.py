@@ -39,7 +39,7 @@ class Rectangle:
         """ Sets the height new value
         Arguments: newheight(int)
         Handles:
-        TypeError and ValueError for non int 
+        TypeError and ValueError for non int
         and negative values
         """
         if type(value) is not int:
