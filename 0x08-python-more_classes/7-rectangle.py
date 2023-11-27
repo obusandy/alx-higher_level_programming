@@ -67,19 +67,18 @@ class Rectangle:
         return self.__width * 2 + self.__height * 2
 
     def __str__(self):
-        """ Returns: prinatble string representation of
-        the rectangle with the character #
-        """
-        if self.__width == 0 or self.__height == 0:
-            return ""
-        return ("\n".join(["".join([str(self.print_symbol)
-                for indx in range(self.__width)]) for k in range(self.__height)]))
+        """returns printable string representation of the rectangle"""
+        strn = ""
+        if self.__width != 0 and self.__height != 0:
+            strn += "\n".join(str(self.print_symbol) * self.__width
+                                for k in range(self.__height))
+        return strn
 
     def __repr__(self):
         """ Returns:
         strn: a string representation of the rectangle
         """
-        return "Rectangle({}, {})".format(self.__width, self.__height)
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
     def __del__(self):
         """Prints bye message when an instance of Rectangle is deleted
