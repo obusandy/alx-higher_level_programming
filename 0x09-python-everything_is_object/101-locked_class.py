@@ -3,7 +3,7 @@
 """function that defines a locked class"""
 
 class LockedClass:
-    """Defines a completely locked class allowing only the creation of the instance
+    """Defines a compltely locked class allowing only the creation of the instance
     attribute which is first name
 
     Attribut:
