@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-""" 
+"""
 Module: file_reader
 
 which Contains a function that reads content from a file.
 """
 
 def read_file(file_name=""):
-    """ 
+    """
     Reads the content from a specific file.
 
     Arguments:
