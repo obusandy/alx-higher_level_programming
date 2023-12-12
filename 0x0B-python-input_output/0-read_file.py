@@ -16,6 +16,5 @@ def read_file(file_name=""):
         FileNotFoundErr: If the file is not found, read or opened.
     """
 
-    with open(file_name, 'r', encoding="utf-8") as f:
-        readtxt_data = f.read()
-        print(readtxt_data, end='')
+    with open(file_name, encoding="utf-8") as f:
+         print(f.read(), end="")
