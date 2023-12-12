@@ -5,7 +5,7 @@ Module: write_file
 Contains a function that writes content to a text file.
 """
 
-def write_to_file(file_name="", txt=""):
+def write_file(file_name="", txt=""):
     """
     Writes content to a specific text file.
 
