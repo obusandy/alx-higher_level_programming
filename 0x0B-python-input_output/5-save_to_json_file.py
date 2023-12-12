@@ -4,6 +4,8 @@ Module: save_to_json_file
 
 Contains a function that writes content to a text file.
 """
+import json
+
 
 
 def def save_to_json_file(my_obj, filename):
