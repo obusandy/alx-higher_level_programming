@@ -9,7 +9,7 @@ module.exports = class Rectangle {
 // return: void
 
   print () {
-    for (let i = 0; i < this.height; i++) console.log('X'.repeat(this.width));
+    for (let j = 0; j < this.height; j++) console.log('X'.repeat(this.width));
   }
 
 //  rotate - makes changes of the width and the height of the rectangle
