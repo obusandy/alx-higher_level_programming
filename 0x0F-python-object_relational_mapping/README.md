@@ -43,5 +43,6 @@ $ python3
 moved in a future release.")  
  cursor.execute(statement, parameters)  
 You can ignore it.
+An object is a collection of related data and/or functionality. These usually consist of several variables and functions (which are called properties and methods when they are inside objects).
 
 # This is a Read me file for 0x0F. Python - Object-relational mapping
