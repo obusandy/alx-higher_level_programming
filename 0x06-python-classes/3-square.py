@@ -10,7 +10,7 @@ class Square:
 
         Arguments:
             size (int): The size of the new square.
-            raises: Type and Value errors if the value is either
+            handles: Type and Value errors if the value is either
             not an int
             less than 0
         """
