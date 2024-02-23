@@ -12,16 +12,16 @@ from sys import argv
 if __name__ == '__main__':
     """
     Arguments:
-                username: string username
-                password: string password
-                database: string database
+    username: string username
+    password: string password
+    database: string database
     """
-    dtbs = MySQLdb.connect(host="localhost", user=argv[1], port=3306,
-                         passwd=argv[2], dtbs=argv[3])
+    db = MySQLdb.connect(host="localhost", user=argv[1], port=3306,
+            passwd=argv[2], db=argv[3])
 
-    curs = dtbs.cursor()
+    curs = db.cursor()
     curs.execute("SELECT * FROM states")
     lines = curs.fetchall()
 
-    for lines in lines:
-        print(lines)
+for lines in lines:
+    print(lines)
