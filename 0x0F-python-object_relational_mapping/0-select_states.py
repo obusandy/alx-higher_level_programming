@@ -19,9 +19,9 @@ if __name__ == '__main__':
     db = MySQLdb.connect(host="localhost", user=argv[1], port=3306,
             passwd=argv[2], db=argv[3])
 
-    curs = db.cursor()
-    curs.execute("SELECT * FROM states")
-    lines = curs.fetchall()
+    cursor = db.cursor()
+    cursor.execute("SELECT * FROM states")
+    lines = cursor.fetchall()
 
     for lines in lines:
     print(lines)
