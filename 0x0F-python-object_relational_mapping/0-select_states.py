@@ -23,5 +23,5 @@ if __name__ == '__main__':
     curs.execute("SELECT * FROM states")
     lines = curs.fetchall()
 
-for lines in lines:
+    for lines in lines:
     print(lines)
