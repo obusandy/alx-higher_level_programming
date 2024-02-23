@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""
-a script that lists all states from
-the database hbtn_0e_0_usa
-script should connect to a MySQL
-server running on localhost at port 3306
-"""
+    """
+    a script that lists all states from
+    the database hbtn_0e_0_usa
+    script should connect to a MySQL
+    server running on localhost at port 3306
+    """
 
 import MySQLdb
 from sys import argv
@@ -17,7 +17,7 @@ if __name__ == '__main__':
                 database: string database
     """
     dtbs = MySQLdb.connect(host="localhost", user=argv[1], port=3306,
-                         passwd=argv[2], db=argv[3])
+                         passwd=argv[2], dtbs=argv[3])
 
     curs = dtbs.cursor()
     curs.execute("SELECT * FROM states")
