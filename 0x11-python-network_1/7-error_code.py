@@ -16,7 +16,7 @@ if __name__ == "__main__":
     url = sys.argv[1]
     rspns = requests.get(url)
 
-    if response.status_code >= 400:
-        print("Error code: {}".format(response.status_code))
+    if rspns.status_code >= 400:
+        print("Error code: {}".format(rspns.status_code))
     else:
         print(rspns.text)
